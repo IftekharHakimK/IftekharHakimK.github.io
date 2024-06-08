@@ -9,15 +9,15 @@ const { Header, Content, Footer, Sider } = Layout;
 function App() {
   return (
     <>
-      <Sidebar>
+      {/* <Sidebar> */}
         <BrowserRouter>
           <Routes>
-            <Route index element={<Education />} />
-            <Route path="education" element={<Education />} />
-            <Route path="about" element={<About />} />
+            <Route index element={<Sidebar><Home /></Sidebar>} />
+            <Route path="education" element={<Sidebar><Education /></Sidebar>} />
+            <Route path="about" element={<Sidebar><About /></Sidebar>} />
           </Routes>
         </BrowserRouter>
-      </Sidebar>
+      {/* </Sidebar> */}
     </>
   );
 }
