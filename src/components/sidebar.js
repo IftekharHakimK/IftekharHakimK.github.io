@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Layout, Menu, theme, Space, Image, ConfigProvider } from 'antd';
+import { Link } from 'react-router-dom';
 const { Header, Content, Footer, Sider } = Layout;
 
 
@@ -9,13 +10,11 @@ const Sidebar = ({ children }) => {
     const items = [
         {
             key: '1',
-            label: 'Home',
-            onClick: () => { window.location.href = '/' },
+            label: <Link to="/">Home</Link>,
         },
         {
             key: '2',
-            label: 'Education',
-            onClick: () => { window.location.href = '/education' },
+            label: <Link to="/education">Education</Link>,
         },
         {
             key: '3',
@@ -23,7 +22,7 @@ const Sidebar = ({ children }) => {
         },
         {
             key: '4',
-            label: 'Honours',
+            label: <Link to="/honours">Honours</Link>,
         },
         {
             key: '5',
@@ -84,7 +83,7 @@ const Sidebar = ({ children }) => {
 
             </Layout>
             :
-            <div style={{ backgroundColor: '#e6ebe7', paddingTop: '50px', paddingBottom: '50px' }}>
+            <div style={{ backgroundColor: '#e6ebe7', paddingTop: '50px', paddingBottom: '50px', minHeight: '100vh' }}>
                 <div style={{ backgroundColor: '#FFFFFF', marginLeft: '10%', marginRight: '10%' }}>
                     <Space.Compact direction="horizontal" style={{ backgroundColor: 'white', width: '100%', display: 'flex', justifyContent: 'space-evenly' }}>
                         <div style={{ width: '70vw' }}>

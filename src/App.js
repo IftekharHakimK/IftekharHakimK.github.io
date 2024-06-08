@@ -5,6 +5,7 @@ import About from './pages/About';
 import Education from './pages/Educations';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import Sidebar from './components/sidebar';
+import Honours from './pages/Honours';
 const { Header, Content, Footer, Sider } = Layout;
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Sidebar><Home /></Sidebar>} />
             <Route path="education" element={<Sidebar><Education /></Sidebar>} />
             <Route path="about" element={<Sidebar><About /></Sidebar>} />
+            <Route path="honours" element={<Sidebar><Honours /></Sidebar>} />
           </Routes>
         </BrowserRouter>
       {/* </Sidebar> */}

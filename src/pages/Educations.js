@@ -12,18 +12,15 @@ const Education = () => {
                     <Typography>Been on dean’s list and received merit scholarships on every academic year. </Typography>
                     <Typography>Notable courses:</Typography>
                     <Row>
-                        <Col sm={24} md={12}>CSE405 - Computer Security</Col>
-                        <Col sm={24} md={12}>CSE305 - Computer Architecture</Col>
-                        <Col sm={24} md={12}>CSE313 - Operating Systems</Col>
-                        <Col sm={24} md={12}>CSE471 - Machine Learning</Col>
-                        <Col sm={24} md={12}>CSE309 - Compiler Design</Col>
-                        <Col sm={24} md={12}>CSE453 - High Performance Database Systems</Col>
-                        <Col sm={24} md={12}>CSE463 - Introduction to Bioinformatics</Col>
-                        <Col sm={24} md={12}>CSE411 - Simulation and Modeling</Col>
-                        <Col sm={24} md={12}>MATH245 - Statistics and Probability</Col>
-                        
-                        
-                        
+                        <Col sm={24} md={12} lg={8}>CSE405 - Computer Security</Col>
+                        <Col sm={24} md={12} lg={8}>CSE305 - Computer Architecture</Col>
+                        <Col sm={24} md={12} lg={8}>CSE313 - Operating Systems</Col>
+                        <Col sm={24} md={12} lg={8}>CSE471 - Machine Learning</Col>
+                        <Col sm={24} md={12} lg={8}>CSE309 - Compiler Design</Col>
+                        <Col sm={24} md={12} lg={8}>CSE453 - High Performance Database Systems</Col>
+                        <Col sm={24} md={12} lg={8}>CSE463 - Introduction to Bioinformatics</Col>
+                        <Col sm={24} md={12} lg={8}>CSE411 - Simulation and Modeling</Col>
+                        <Col sm={24} md={12} lg={8}>MATH245 - Statistics and Probability</Col>
                         <Col sm={24} md={12}>MATH247- Linear Algebra</Col>
                         
                     </Row>
