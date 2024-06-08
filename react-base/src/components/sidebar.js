@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Layout, Menu, theme, Space, Image } from 'antd';
+import { Layout, Menu, theme, Space, Image, ConfigProvider } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
 
 
@@ -10,11 +10,12 @@ const Sidebar = ({ children }) => {
         {
             key: '1',
             label: 'Home',
-            onClick: () => {window.location.href = '/'}
+            onClick: () => { window.location.href = '/' },
         },
         {
             key: '2',
             label: 'Education',
+            onClick: () => { window.location.href = '/education' },
         },
         {
             key: '3',
@@ -37,7 +38,7 @@ const Sidebar = ({ children }) => {
             label: 'Contact',
         },
     ]
-    
+
     const icons = [
         {
             key: '1',
@@ -77,19 +78,27 @@ const Sidebar = ({ children }) => {
                 >
                     <Menu theme="light" mode="inline" defaultSelectedKey={['1']} items={items} />
                 </Sider>
-                <div style={{margin: '10px', marginTop: '20px'}}>
+                <div style={{ margin: '10px', marginTop: '20px' }}>
                     {children}
                 </div>
-                
+
             </Layout>
             :
-            <div style={{backgroundColor: '#e6ebe7'}}>
-                <div style={{width: '60%', backgroundColor: '#e6ebe7', paddingTop: '50px', marginLeft: '20%', marginRight: '20%'}}>
-                    <Space direction="horizontal" style={{backgroundColor: 'white'}}>
-                        <Menu theme="light" mode="horizontal" defaultSelectedKeys={['1']} items={items} style={{ width: '40vw' }} inlineIndent={2}/>
-                        <Menu theme="light" mode="horizontal" items={icons} style={{ width: '20vw' }} />
-                    </Space>
-                    {children}
+            <div style={{ backgroundColor: '#e6ebe7', paddingTop: '50px', paddingBottom: '50px' }}>
+                <div style={{ backgroundColor: '#FFFFFF', marginLeft: '10%', marginRight: '10%' }}>
+                    <Space.Compact direction="horizontal" style={{ backgroundColor: 'white', width: '100%', display: 'flex', justifyContent: 'space-evenly' }}>
+                        <div style={{ width: '70vw' }}>
+                            <Menu theme="light" mode="horizontal" items={items} inlineIndent={2} />
+                        </div>
+                        <div style={{ width: '30vw' }}>
+                            <Menu theme="light" mode="horizontal" items={icons} />
+                        </div>
+
+
+                    </Space.Compact>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingLeft: '5%', paddingRight: '5%', paddingTop: '15px' }}>
+                        {children}
+                    </div>
                 </div>
             </div>
 
