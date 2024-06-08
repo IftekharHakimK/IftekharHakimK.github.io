@@ -12,7 +12,7 @@ function App() {
       <Sidebar>
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home />} />
+            <Route index element={<Education />} />
             <Route path="education" element={<Education />} />
             <Route path="about" element={<About />} />
           </Routes>
