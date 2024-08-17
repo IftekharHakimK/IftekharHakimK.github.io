@@ -1,25 +1,27 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
-import About from './pages/About';
 import Education from './pages/Educations';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import Project from './pages/Projects';
+import Research from './pages/Research';
 import Sidebar from './components/sidebar';
 import Honours from './pages/Honours';
-const { Header, Content, Footer, Sider } = Layout;
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
 function App() {
   return (
     <>
-      {/* <Sidebar> */}
         <BrowserRouter>
           <Routes>
             <Route index element={<Sidebar><Home /></Sidebar>} />
             <Route path="education" element={<Sidebar><Education /></Sidebar>} />
-            <Route path="about" element={<Sidebar><About /></Sidebar>} />
+            <Route path="experience" element={<Sidebar><Experience/></Sidebar>} />
+            <Route path="projects" element={<Sidebar><Project/></Sidebar>} />
             <Route path="honours" element={<Sidebar><Honours /></Sidebar>} />
+            <Route path="contact" element={<Sidebar><Contact /></Sidebar>} />
+            <Route path="research" element={<Sidebar><Research /></Sidebar>} />
           </Routes>
         </BrowserRouter>
-      {/* </Sidebar> */}
     </>
   );
 }

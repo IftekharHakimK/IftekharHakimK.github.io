@@ -18,7 +18,8 @@ const Sidebar = ({ children }) => {
         },
         {
             key: '3',
-            label: 'Experience',
+            label: <Link to="/experience">Experience</Link>,
+            
         },
         {
             key: '4',
@@ -26,15 +27,15 @@ const Sidebar = ({ children }) => {
         },
         {
             key: '5',
-            label: 'Projects',
+            label: <Link to='/projects'>Projects</Link>,
         },
         {
             key: '6',
-            label: 'Research',
+            label: <Link to='/research'>Research</Link>,
         },
         {
             key: '7',
-            label: 'Contact',
+            label: <Link to='/contact'>Contact</Link>,
         },
     ]
 
