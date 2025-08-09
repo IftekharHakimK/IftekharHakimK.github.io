@@ -5,10 +5,14 @@ const Experience = () => {
         <>
             <Timeline>
                 <Timeline.Item>
+                    <Typography.Title level={5}>Meta</Typography.Title >
+                    <Typography.Text italic>Production Engineer (June 2025 - Present)</Typography.Text>
+                </Timeline.Item>
+                <Timeline.Item>
                     <Typography.Title level={5}>PriyoSys Ltd.</Typography.Title >
-                    <Typography.Text italic>Software Engineer (June 2023 - Present)</Typography.Text>
+                    <Typography.Text italic>Software Engineer (June 2023 - June 2025)</Typography.Text>
                     <Typography>
-                        Working massively on  
+                        Worked massively on  
                         <Link to="https://pay.priyo.com/" target="_blank" rel="noopener noreferrer"> Priyo Pay </Link>
                         a fast growing Fintech startup that offers US bank account, BDT wallet and Mastercard usable to pay and 
                         transfer money between US and Bangladesh. This SaaS product has a large

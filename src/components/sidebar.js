@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Layout, Menu, theme, Space, Image, ConfigProvider } from 'antd';
 import { Link } from 'react-router-dom';
 const { Header, Content, Footer, Sider } = Layout;
+import { AnimatedBackground } from 'animated-backgrounds';
 
 
 
@@ -84,7 +85,8 @@ const Sidebar = ({ children }) => {
 
             </Layout>
             :
-            <div style={{ backgroundColor: '#e6ebe7', paddingTop: '50px', paddingBottom: '50px', minHeight: '100vh' }}>
+            <><AnimatedBackground animationName="snowFall" style={{ backgroundColor: 'red' }}/>
+            <div style={{ paddingTop: '50px', paddingBottom: '50px', minHeight: '100vh' }}>
                 <div style={{ backgroundColor: '#FFFFFF', marginLeft: '10%', marginRight: '10%' }}>
                     <Space.Compact direction="horizontal" style={{ backgroundColor: 'white', width: '100%', display: 'flex', justifyContent: 'space-evenly' }}>
                         <div style={{ width: '70vw' }}>
@@ -96,11 +98,12 @@ const Sidebar = ({ children }) => {
 
 
                     </Space.Compact>
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingLeft: '5%', paddingRight: '5%', paddingTop: '15px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingLeft: '5%', paddingRight: '5%', paddingTop: '15px', minHeight: '500px' }}>
                         {children}
                     </div>
                 </div>
             </div>
+            </>
 
 
         }

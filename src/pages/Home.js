@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Typography } from 'antd';
+import { Button, Divider, Typography } from 'antd';
 import { Anchor, Col, Row } from 'antd';
 import { Image } from 'antd';
 const Home = () => {
@@ -24,13 +24,22 @@ const Intro = () => {
       <Col sm={24} md={2}></Col>
       <Col sm={24} md={16}>
         <Typography.Title level={3}>Iftekhar Hakim Kaowsar</Typography.Title>
-        <Typography.Text italic>Software Engineer, PriyoSys Limited (June 2023 - Present)</Typography.Text><br/>
-        <Typography.Text italic>Graduated from CSE, BUET (2023)</Typography.Text>
+        <Typography.Text italic>
+          <b>
+            <a href="https://engineering.fb.com/category/production-engineering/" target="_blank" rel="noopener noreferrer">
+              Production Engineer
+            </a>, Meta Platforms Inc., London (June 2025 - Present)</b></Typography.Text><br/>
+        <Typography.Text italic>Software Engineer, PriyoSys Ltd. (June 2023 - June 2025)</Typography.Text><br/>
+        <Typography.Text italic>Graduated from CSE, BUET (May 2023)</Typography.Text>
         
         <Typography.Paragraph></Typography.Paragraph>
-        <Typography.Paragraph>I am currently working as a Fullstack software engineer in PriyoSys Limited,
+        <Typography.Paragraph>I have joined Meta London in Production Engineering which is software and systems engineering
+          at infrastructure space. Happy to join one of the core infrastructure teams of Meta in Capacity management. 
+        </Typography.Paragraph>
+        <Divider style={{ borderColor: '#000000' }}/>
+        <Typography.Paragraph>Previously, I worked as a Software Engineer in PriyoSys Limited,
           focused on Fintech SaaS products. Backend and frontend development, system design and product design
-          have been my job here.
+          had been my job here.
         </Typography.Paragraph>
         <Typography.Paragraph>
           I like to indulge in analytical thinking and finding solutions of complex problems.
@@ -41,6 +50,7 @@ const Intro = () => {
           I have already worked on theoretical computer science based research to solve parameterized string matching problem with mismatch
           tolerance. Our manuscript is under review for publication (joint first-authored).
         </Typography.Paragraph>
+        <Divider style={{ borderColor: '#000000' }}/>
         <Typography.Paragraph>
           During my undergraduate life, I am honoured to participate in many international and national programming contests, notably
           45th ICPC World Finals 2021 in Dhaka and 47th ICPC World Final 2023 in Luxor. Pariticipating in competitive programming has been primary
